@@ -20,7 +20,11 @@ public class DataBaseMenuGroup {
     public String getGroupName(){
         String[] column = {"group_name"};
         Cursor cursor = db.query("menu_group",column,null,null,null,null,null);
-        groupName = cursor.getString(0);
+        if(!cursor.isAfterLast()) {
+            groupName = cursor.getString(0);
+        }else{
+            groupName ="";
+        }
         return groupName;
     }
 }

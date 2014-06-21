@@ -70,13 +70,13 @@ public class MenuFragment extends BaseFragment {
     }
     private void setMenuList(){
         ArrayAdapter<String> adapter;
-        try{
+        DataBase database = new DataBase(context);
+        int id = database.getGroupId(mMyDate.getDateToday());
+        if(id != 0){
             // データがある場合はリストに本日のメニューを表示する
-            DataBase database = new DataBase(context);
-            int id = database.getGroupId(mMyDate.getDateToday());
             mGrpNameTextView.setText(database.getGroupName(id));
             adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1,database.getEvent(id));
-        }catch(SQLException e){
+        }else{
             // テーブルにレコードが無いときはリストにデータ作成リンクを表示
             String[] strAddMenu = {"メニュー作成..."};
             adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1,strAddMenu);

@@ -19,6 +19,7 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
         /*
          テーブル作成
          */
+        db.execSQL("PRAGMA foreign_keys=true;");
         String sql = DBConstants.getTableQuery(DBConstants.Table_Name.MENU_GROUP);
         db.execSQL(sql);
         sql = DBConstants.getTableQuery(DBConstants.Table_Name.MENU_MODULE);

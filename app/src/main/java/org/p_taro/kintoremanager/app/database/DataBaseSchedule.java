@@ -16,12 +16,14 @@ public class DataBaseSchedule {
         this.date = date;
     }
     public int getGroupID(){
-        String[] column = {"groupId"};
+        String[] column = {"group_id"};
         Cursor cursor = db.query("schedule",column,null,null,null,null,null);
+        if(!cursor.isAfterLast()) {
+            id = cursor.getInt(0);
+        }else{
+            id = 0;
+        }
 
-        id = cursor.getInt(0);
         return id;
     }
-
-
 }
