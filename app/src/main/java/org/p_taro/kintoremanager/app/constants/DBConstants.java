@@ -16,9 +16,7 @@ public class DBConstants {
              * メニューモジュール
              */
             "Create table menu_module("+
-            //"foreign key(groupId) references menu_group(_id)" +
-            "groupId integer," +
-            "id integer primary key autoincrement," +
+            "group_Id integer," +
             "event text not null,"+
             "weight1 integer," +
             "rep1 integer," +
@@ -29,14 +27,16 @@ public class DBConstants {
             "weight4 integer," +
             "rep4 integer," +
             "weight5 integer," +
-            "rep5 integer" +
+            "rep5 integer," +
+            "foreign key(group_id) references menu_group(_id)" +
             ");",
             /*
              スケジュールテーブル
              */
             "create table schedule(" +
+            "group_id integer" +
             "date integer," +
-            "foreign key(groupId) references menu_group(_id)" +
+            "foreign key(group_id) references menu_group(_id)" +
             ");",
     };
 
