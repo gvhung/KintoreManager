@@ -72,12 +72,8 @@ public class MenuFragment extends BaseFragment {
         ArrayAdapter<String> adapter;
         DataBase database = new DataBase(context);
         int id = database.getGroupId(mMyDate.getDateToday());
-<<<<<<< HEAD
-        if(id != 0){
-=======
         if(id > -1){
->>>>>>> issue-sql
-            // データがある場合はリストに本日のメニューを表示する
+             // データがある場合はリストに本日のメニューを表示する
             mGrpNameTextView.setText(database.getGroupName(id));
             adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1,database.getEvent(id));
         }else{
