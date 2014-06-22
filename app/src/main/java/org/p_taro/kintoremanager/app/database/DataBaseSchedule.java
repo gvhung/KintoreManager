@@ -21,7 +21,11 @@ public class DataBaseSchedule {
         if(!cursor.isAfterLast()) {
             id = cursor.getInt(0);
         }else{
+<<<<<<< HEAD
             id = 0;
+=======
+            id = -1;
+>>>>>>> issue-sql
         }
 
         return id;
