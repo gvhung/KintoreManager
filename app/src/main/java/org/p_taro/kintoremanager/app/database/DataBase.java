@@ -22,6 +22,17 @@ public class DataBase {
         db = helper.getWritableDatabase();
     }
 
+    public void close(){
+        db.close();
+    }
+
+    private String[] readDB(String column,String key){
+        return null;
+    }
+    public String[] getGroupNameAll(int id){
+        menuGroup = new DataBaseMenuGroup(id,db);
+        return menuGroup.getGroupNameAll();
+    }
     public String getGroupName(int id){
         menuGroup = new DataBaseMenuGroup(id,db);
         return menuGroup.getGroupName();

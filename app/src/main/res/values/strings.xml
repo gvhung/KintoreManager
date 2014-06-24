@@ -21,4 +21,6 @@
     </string-array>
     <string name="drawer_open">drawer open</string>
     <string name="drawer_close">drawe close</string>
+    <string name="select_group">--グループを選択してください--</string>
+    <string name="create_new_group">新規グループ作成</string>
 </resources>

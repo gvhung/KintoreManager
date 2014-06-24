@@ -34,8 +34,9 @@ public class DBConstants {
              スケジュールテーブル
              */
             "create table schedule(" +
+            "_id integer primary key autoincrement,"+
             "group_id integer" +
-            "date integer," +
+            "date text," +
             "foreign key(group_id) references menu_group(_id)" +
             ");",
     };
