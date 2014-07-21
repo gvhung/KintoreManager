@@ -28,7 +28,6 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
         db.execSQL(sql);
     }
 
-
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
 

@@ -55,7 +55,7 @@ public class MenuFragment extends BaseFragment {
 
         mDateTextView.setText(mMyDate.getDateToday());
         context = getActivity();
-        setMenuList();
+        setGroupNameSpinner();
 
         mMenuListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -68,8 +68,11 @@ public class MenuFragment extends BaseFragment {
 
     }
 
-    private void setMenuList() {
-        ArrayAdapter<String> adapter;
+    /**
+     * スピナーにグループ名リストを設定する
+     * 日付からグループ初期値を決定
+     */
+    private void setGroupNameSpinner() {
         ArrayAdapter<String> grpNameAdapter;
         MenuGroup mgn = new MenuGroup(getActivity());
         List<String > grpNameList = mgn.getGroupNameList();
