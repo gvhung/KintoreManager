@@ -1,13 +1,170 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="org.p_taro.kintoremanager.create1_d">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_weight="0.19">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="メニュー作成"
+            android:id="@+id/textView3"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:text="グループ名を入力してください" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
 
-</FrameLayout>
+        <AutoCompleteTextView
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:id="@+id/menuText1"
+            style="@style/MenuNameStyle" />
+
+        <EditText
+            android:layout_width="63dp"
+            android:layout_height="50dp"
+            android:id="@+id/rmNum1"
+            style="@style/RmNumberStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/rmText1"
+            style="@style/RmTextStyle" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:id="@+id/menuText2"
+            style="@style/MenuNameStyle" />
+
+        <EditText
+            android:layout_width="63dp"
+            android:layout_height="50dp"
+            android:id="@+id/rmNum2"
+            style="@style/RmNumberStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/rmText2"
+            style="@style/RmTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:id="@+id/menuText3"
+            style="@style/MenuNameStyle" />
+
+        <EditText
+            android:layout_width="63dp"
+            android:layout_height="50dp"
+            android:id="@+id/rmNum3"
+            style="@style/RmNumberStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/rmText3"
+            style="@style/RmTextStyle" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:id="@+id/menuText4"
+            style="@style/MenuNameStyle" />
+
+        <EditText
+            android:layout_width="63dp"
+            android:layout_height="50dp"
+            android:id="@+id/rmNum4"
+            style="@style/RmNumberStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/rmText4"
+            style="@style/RmTextStyle" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:id="@+id/menuText5"
+            style="@style/MenuNameStyle" />
+
+        <EditText
+            android:layout_width="63dp"
+            android:layout_height="50dp"
+            android:id="@+id/rmNum5"
+            style="@style/RmNumberStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/rmText5"
+            style="@style/RmTextStyle" />
+    </LinearLayout>
+
+</LinearLayout>

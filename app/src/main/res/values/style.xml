@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MenuNameStyle">
+        <item name="android:layout_weight" >0.81</item>
+        <item name="android:layout_marginRight">32dp</item>
+    </style>
+    <style name="RmNumberStyle">
+        <item name="android:inputType">number</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+    <style name="RmTextStyle">
+        <item name="android:text">RM</item>
+        <item name="android:layout_weight">0.16</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>
